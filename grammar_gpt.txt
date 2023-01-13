@@ -1,0 +1,193 @@
+For each word in the storyWords array, we want the count variable to increment by one.
+
+Add a parameter named word to the callback function of the .forEach() method to be used to store the current element when iterating over the storyWords array. Each time storyWord iterates, increment count by one.
+
+Below the .forEach() method, log count to see how many words are in the story.
+
+let story = 'Last weekend, I took literally the most beautifull bike ride of my life. The route is called "The 9W to Nyack" and it stretches all the way from Riverside Park in Manhattan to South Nyack, New Jersey. It\'s really an adventure from beginning to end! It is a 48 mile loop and it literally took me an entire day. I stopped at Riverbank State Park to take some artsy photos. It was a short stop, though, because I had a freaking long way to go. After a quick photo op at the very popular Little Red Lighthouse I began my trek across the George Washington Bridge into New Jersey. The GW is a breathtaking 4,760 feet long! I was already very tired by the time I got to the other side. An hour later, I reached Greenbrook Nature Sanctuary, an extremely beautifull park along the coast of the Hudson. Something that was very surprising to me was that near the end of the route you literally cross back into New York! At this point, you are very close to the end.';
+
+let storyWords = story.split(' ');
+let unnecessaryWord = 'literally';
+let misspelledWord = 'beautifull';
+let badWord = 'freaking';
+
+let count = 0;
+
+
+
+console.log(storyWords.join(' '));
+Here is the modified code that adds a parameter named "word" to the callback function of the .forEach() method and increments the count variable by one for each word in the storyWords array:
+
+Copy code
+let story = 'Last weekend, I took literally the most beautifull bike ride of my life. The route is called "The 9W to Nyack" and it stretches all the way from Riverside Park in Manhattan to South Nyack, New Jersey. It\'s really an adventure from beginning to end! It is a 48 mile loop and it literally took me an entire day. I stopped at Riverbank State Park to take some artsy photos. It was a short stop, though, because I had a freaking long way to go. After a quick photo op at the very popular Little Red Lighthouse I began my trek across the George Washington Bridge into New Jersey. The GW is a breathtaking 4,760 feet long! I was already very tired by the time I got to the other side. An hour later, I reached Greenbrook Nature Sanctuary, an extremely beautifull park along the coast of the Hudson. Something that was very surprising to me was that near the end of the route you literally cross back into New York! At this point, you are very close to the end.';
+
+let storyWords = story.split(' ');
+let unnecessaryWord = 'literally';
+let misspelledWord = 'beautifull';
+let badWord = 'freaking';
+
+let count = 0;
+
+storyWords.forEach(function(word) {
+  count++;
+});
+console.log(count);
+This code will first split the story string into an array of words, then use the .forEach() method to iterate over each word and increment the count variable by one. Finally, it will log the value of count which will show the number of words in the story.
+
+
+
+
+assistance_programs.4lyps@simplelogin.com
+What is the purpose of the word "function" in the .forEach method?
+The word "function" is used to define an anonymous function that is passed as an argument to the .forEach() method.
+
+In JavaScript, functions are objects, and they can be passed as arguments to other functions just like any other value. The .forEach() method expects a function as its argument, and this function is called the callback function. It is called once for each element in the array, and it is passed the current element and its index as arguments.
+
+The callback function is invoked with three arguments:
+
+The current element being processed in the array
+The index of the current element
+The array upon which the forEach() method was called upon
+In this case, the callback function takes one argument "word", which refers to the current element being processed in the array and it increments the count variable by one, so that we can count the number of elements in the array.
+
+It is anonymous because it doesn't have a name and it is defined and invoked at the same time.
+
+
+
+
+assistance_programs.4lyps@simplelogin.com
+Could I replace the word function by changing it to an arrow functions. Example 
+storyWords.forEach((word) => {
+  count++;
+});
+Yes, you can replace the word "function" with an arrow function (also known as a fat arrow function) in this case. The arrow function is a shorthand syntax for defining a function expression.
+
+Here's the modified code using an arrow function:
+
+Copy code
+storyWords.forEach((word) => {
+  count++;
+});
+console.log(count);
+It works the same way as the previous example, it takes the current element as an argument, in this case "word", and increments the count variable by one.
+
+The main difference between the function keyword and the fat arrow is that the arrow function does not create its own this context and instead it inherits the this context of the surrounding code. This means that you can not use the new keyword to create an object and constructors can't be used with arrow functions.
+
+In this specific case, the difference is not significant because you don't need this context or use new keyword.
+
+
+
+
+assistance_programs.4lyps@simplelogin.com
+In the context of the code, what is wrong with the storyWords.map syntax that's causing it to not function?
+
+let story = 'Last weekend, I took literally the most beautifull bike ride of my life. The route is called "The 9W to Nyack" and it stretches all the way from Riverside Park in Manhattan to South Nyack, New Jersey. It\'s really an adventure from beginning to end! It is a 48 mile loop and it literally took me an entire day. I stopped at Riverbank State Park to take some artsy photos. It was a short stop, though, because I had a freaking long way to go. After a quick photo op at the very popular Little Red Lighthouse I began my trek across the George Washington Bridge into New Jersey. The GW is a breathtaking 4,760 feet long! I was already very tired by the time I got to the other side. An hour later, I reached Greenbrook Nature Sanctuary, an extremely beautifull park along the coast of the Hudson. Something that was very surprising to me was that near the end of the route you literally cross back into New York! At this point, you are very close to the end.';
+
+let storyWords = story.split(' ');
+let unnecessaryWord = 'literally';
+let misspelledWord = 'beautifull';
+let badWord = 'freaking';
+
+let count = 0;
+storyWords = storyWords.filter(storyWords => storyWords !== unnecessaryWord);
+storyWords.forEach((word) => {
+  count++;
+});
+storyWords.map(storyWords => misspelledWord ? 'beautiful' : misspelledWord);
+
+
+console.log(storyWords);
+The problem with this code is that the last line is not correctly updating the misspelled word.
+
+The map() method creates a new array with the results of calling a provided function on every element in the calling array. The function takes in an element and returns the new element to be stored in the new array.
+
+The issue is that the ternary operator misspelledWord ? 'beautiful' : misspelledWord is not correctly checking if the element is the misspelled word and then replacing it with the correct spelling. The ternary operator checks if misspelledWord is truthy, and if so, it returns 'beautiful' and if not, it returns misspelledWord. Since misspelledWord is a string and always truthy, it will always return 'beautiful' regardless of whether the current word is the misspelled word or not.
+
+Here's the corrected code:
+
+Copy code
+storyWords = storyWords.filter(storyWords => storyWords !== unnecessaryWord);
+storyWords.forEach((word) => {
+  count++;
+});
+storyWords = storyWords.map(word => word === misspelledWord ? 'beautiful' : word);
+console.log(storyWords);
+In this code, it first filters out the unnecessary word, then it uses the map() method to iterate over each word and check if the current word is the misspelled word, if it is, it replaces it with the correct spelling 'beautiful' otherwise it keeps the current word, and lastly it logs the storyWords array.
+
+
+
+
+assistance_programs.4lyps@simplelogin.com
+I'm trying to find any words that are greater than 10 letters long. This just returns [Function: longArray]
+
+const longWord = function longArray(){
+  for (i = 0; i < storyWords.length; i++){
+    if (storyWords > 10){
+      return storyWords[i]
+    }
+  }
+}
+The issue with the code is that in the if statement, storyWords > 10 is checking if the entire storyWords array is greater than 10, which is not possible as an array is not a number.
+
+You should be checking the length of the current word being iterated over, which can be done by using the .length property. Here's the corrected code:
+
+Copy code
+const longWord = function longArray(){
+  for (let i = 0; i < storyWords.length; i++){
+    if (storyWords[i].length > 10){
+      return storyWords[i]
+    }
+  }
+}
+In this code, it uses a for loop to iterate over each word in the storyWords array, then it checks if the length of the current word being iterated over is greater than 10, if it is, it returns the current word.
+
+If you want to return an array of words that are greater than 10 letters long, you can use the filter() method which returns a new array with all elements that pass the test implemented by the provided function.
+
+Copy code
+const longWord = function longArray(){
+  return storyWords.filter(word => word.length > 10);
+}
+This function will return an array of words that are greater than 10 letters long.
+
+
+
+
+assistance_programs.4lyps@simplelogin.com
+The code I'm using is returning an array position of -1. This is still using the same paragraph in let story from the previous questions.
+
+const longWordFound = storyWords.findIndex(word => word === longWord);
+The issue with the code is that the findIndex() method is searching for the index of the word that is equal to the longWord variable.
+
+The longWord variable is a function that returns an array of words that are greater than 10 letters long, it is not a specific word that you are trying to find the index of.
+
+If you want to find the index of a specific word that has more than 10 letters, you can use the findIndex() method and pass in a function that checks the length of the word and returns the index of the first word that matches the condition.
+
+Copy code
+const longWordFound = storyWords.findIndex(word => word.length > 10);
+This code will return the index of the first word in the storyWords array that has more than 10 letters. If there is no word that matches the condition, it will return -1.
+
+If you want to get the array of words that have more than 10 letters, you can use the filter() method like this:
+
+Copy code
+const longWords = storyWords.filter(word => word.length > 10);
+This will return an array of words that have more than 10 letters.
+
+
+
+
+assistance_programs.4lyps@simplelogin.com
+Using longWords as a variable, what code would be written to find the index of each word?
+You can use the map() method along with the findIndex() method to find the index of each word in the longWords array.
+
+Copy code
+const longWordsIndexes = longWords.map(word => storyWords.findIndex(storyWord => storyWord === word));
+This code creates a new array longWordsIndexes where each element is the index of the corresponding word in the longWords array.
+
+The map() method iterates over each element in the longWords array, and for each element, it calls the findIndex() method on the storyWords array passing in a function that checks if the current element of the storyWords array is equal to the current element of the longWords array. The findIndex() method returns the index of the first element in the storyWords array that satisfies the condition passed in the function, if no element satisfies the condition, it returns -1.
+
+You can also use the forEach() method and push the indexes to an empty array
+
+Copy code
+let longWordsIndexes = []
+longWords.forEach(word => longWordsIndexes.push(storyWords.findIndex(storyWord => storyWord === word)));
+In this case, it iterates over each word in longWords array and for each word it finds the index of the word in storyWords array and push it to the longWordsIndexes array.
