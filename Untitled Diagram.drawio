@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-11-22T18:57:19.446Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="TQflbx2FS8GKhXNnfXHT" version="22.1.3" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-22T18:59:28.124Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="4t-AnNjZilN72fXUy9JE" version="22.1.3" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1434" dy="772" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -6,6 +6,9 @@
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="UrWYrcBueKwEf1aX-Rte-0" value="&lt;h1 style=&quot;line-height: 80%;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Slot Master Connection&lt;/span&gt;&lt;/h1&gt;&lt;h1 style=&quot;line-height: 70%;&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Connect and external Slot Master Microsoft Excel sheet to the Dynamic Gaming Solutions Microsoft SQL server. Pulling information from projects to apply changes or additions to the asset table. Store multiple assets of the same S/N until revenue has been inserted.&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;/h1&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="10" y="10" width="810" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="UrWYrcBueKwEf1aX-Rte-1" value="Compliance" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="30" y="130" width="30" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
