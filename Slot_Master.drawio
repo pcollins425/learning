@@ -1,108 +1,117 @@
-<mxfile host="app.diagrams.net" modified="2023-11-22T19:25:41.679Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="Ei55QR-cstYeAiNThdDb" version="22.1.3" type="github">
-  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="1434" dy="772" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
-      <root>
-        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
-        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
-        <mxCell id="UrWYrcBueKwEf1aX-Rte-0" value="&lt;h1 style=&quot;line-height: 80%;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Slot Master Connection&lt;/span&gt;&lt;/h1&gt;&lt;h1 style=&quot;line-height: 70%;&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Connect and external Slot Master Microsoft Excel sheet to the Dynamic Gaming Solutions Microsoft SQL server. Pulling information from projects to apply changes or additions to the asset table. Store multiple assets of the same S/N until revenue has been inserted.&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;/h1&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="10" y="10" width="810" height="120" as="geometry" />
-        </mxCell>
-        <mxCell id="UrWYrcBueKwEf1aX-Rte-1" value="Compliance" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="30" y="130" width="30" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="_Gnq-zmmvSpw4ipCfWBr-0" value="Create project containing relevant changes" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="150" y="130" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="_Gnq-zmmvSpw4ipCfWBr-1" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="UrWYrcBueKwEf1aX-Rte-1" target="_Gnq-zmmvSpw4ipCfWBr-0">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="390" y="420" as="sourcePoint" />
-            <mxPoint x="440" y="370" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="_Gnq-zmmvSpw4ipCfWBr-4" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="_Gnq-zmmvSpw4ipCfWBr-0" target="_Gnq-zmmvSpw4ipCfWBr-11">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="390" y="420" as="sourcePoint" />
-            <mxPoint x="360" y="160" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="_Gnq-zmmvSpw4ipCfWBr-6" value="Check if asset exists." style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="640" y="280" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="_Gnq-zmmvSpw4ipCfWBr-7" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="_Gnq-zmmvSpw4ipCfWBr-6" target="_Gnq-zmmvSpw4ipCfWBr-10">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="20" y="570" as="sourcePoint" />
-            <mxPoint x="250" y="360" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="_Gnq-zmmvSpw4ipCfWBr-8" value="Exists" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="_Gnq-zmmvSpw4ipCfWBr-7">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="_Gnq-zmmvSpw4ipCfWBr-10" value="Creates duplicate asset with updated data" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="340" y="280" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="_Gnq-zmmvSpw4ipCfWBr-11" value="Checks if date has arrived" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="330" y="130" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="_Gnq-zmmvSpw4ipCfWBr-12" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.021;entryY=0.598;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="_Gnq-zmmvSpw4ipCfWBr-11" target="_Gnq-zmmvSpw4ipCfWBr-14">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="360" y="320" as="sourcePoint" />
-            <mxPoint x="620" y="190" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="_Gnq-zmmvSpw4ipCfWBr-13" value="Date has NOT arrived" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="_Gnq-zmmvSpw4ipCfWBr-12">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="-6" y="1" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="_Gnq-zmmvSpw4ipCfWBr-14" value="Do nothing" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="620" y="110" width="80" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="_Gnq-zmmvSpw4ipCfWBr-15" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;entryX=1;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="_Gnq-zmmvSpw4ipCfWBr-11" target="_Gnq-zmmvSpw4ipCfWBr-6">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="240" y="290" as="sourcePoint" />
-            <mxPoint x="760" y="200" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="_Gnq-zmmvSpw4ipCfWBr-16" value="Date has arrived" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="_Gnq-zmmvSpw4ipCfWBr-15">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="_Gnq-zmmvSpw4ipCfWBr-18" value="Creates new asset with relevant data" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="340" y="370" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="_Gnq-zmmvSpw4ipCfWBr-19" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="_Gnq-zmmvSpw4ipCfWBr-6" target="_Gnq-zmmvSpw4ipCfWBr-18">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="240" y="450" as="sourcePoint" />
-            <mxPoint x="340" y="450" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="_Gnq-zmmvSpw4ipCfWBr-20" value="Does NOT Exist" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="_Gnq-zmmvSpw4ipCfWBr-19">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="_Gnq-zmmvSpw4ipCfWBr-24" value="" style="endArrow=classic;html=1;rounded=0;exitX=-0.014;exitY=0.353;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="_Gnq-zmmvSpw4ipCfWBr-10" target="_Gnq-zmmvSpw4ipCfWBr-28">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="380" y="450" as="sourcePoint" />
-            <mxPoint x="270" y="300" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="_Gnq-zmmvSpw4ipCfWBr-25" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.856;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="_Gnq-zmmvSpw4ipCfWBr-18" target="_Gnq-zmmvSpw4ipCfWBr-28">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="380" y="450" as="sourcePoint" />
-            <mxPoint x="240" y="380" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="_Gnq-zmmvSpw4ipCfWBr-26" value="Slot Master" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="10" y="370" width="120" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="_Gnq-zmmvSpw4ipCfWBr-28" value="DGS_SLOT&lt;br&gt;.dbo&lt;br&gt;.slot_master" style="shape=datastore;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="170" y="300" width="70" height="70" as="geometry" />
-        </mxCell>
-        <mxCell id="_Gnq-zmmvSpw4ipCfWBr-29" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="_Gnq-zmmvSpw4ipCfWBr-28" target="_Gnq-zmmvSpw4ipCfWBr-26">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="70" y="330" as="sourcePoint" />
-            <mxPoint x="420" y="360" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
+<mxfile host="65bd71144e">
+    <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+        <mxGraphModel dx="878" dy="775" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="WIyWlLk6GJQsqaUBKTNV-0"/>
+                <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0"/>
+                <mxCell id="UrWYrcBueKwEf1aX-Rte-0" value="&lt;h1 style=&quot;line-height: 80%;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Slot Master Connection&lt;/span&gt;&lt;/h1&gt;&lt;h1 style=&quot;line-height: 70%;&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Connect and external Slot Master Microsoft Excel sheet to the Dynamic Gaming Solutions Microsoft SQL server. Pulling information from projects to apply changes or additions to the asset table. Store multiple assets of the same S/N until revenue has been inserted.&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;/h1&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+                    <mxGeometry x="10" y="10" width="810" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="UrWYrcBueKwEf1aX-Rte-1" value="Compliance" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+                    <mxGeometry x="30" y="130" width="30" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="_Gnq-zmmvSpw4ipCfWBr-0" value="Create project containing relevant changes" style="rounded=1;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+                    <mxGeometry x="150" y="130" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="_Gnq-zmmvSpw4ipCfWBr-1" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="UrWYrcBueKwEf1aX-Rte-1" target="_Gnq-zmmvSpw4ipCfWBr-0" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="390" y="420" as="sourcePoint"/>
+                        <mxPoint x="440" y="370" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="_Gnq-zmmvSpw4ipCfWBr-4" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="_Gnq-zmmvSpw4ipCfWBr-0" target="_Gnq-zmmvSpw4ipCfWBr-11" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="390" y="420" as="sourcePoint"/>
+                        <mxPoint x="360" y="160" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="_Gnq-zmmvSpw4ipCfWBr-6" value="Check if asset exists." style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+                    <mxGeometry x="640" y="280" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="_Gnq-zmmvSpw4ipCfWBr-7" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="_Gnq-zmmvSpw4ipCfWBr-6" target="_Gnq-zmmvSpw4ipCfWBr-10" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="20" y="570" as="sourcePoint"/>
+                        <mxPoint x="250" y="360" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="_Gnq-zmmvSpw4ipCfWBr-8" value="Exists" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" parent="_Gnq-zmmvSpw4ipCfWBr-7" connectable="0" vertex="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="_Gnq-zmmvSpw4ipCfWBr-10" value="Creates duplicate asset with updated data" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+                    <mxGeometry x="340" y="280" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="_Gnq-zmmvSpw4ipCfWBr-11" value="Checks if project is complete" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+                    <mxGeometry x="330" y="130" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="_Gnq-zmmvSpw4ipCfWBr-12" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.021;entryY=0.598;entryDx=0;entryDy=0;entryPerimeter=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="_Gnq-zmmvSpw4ipCfWBr-11" target="_Gnq-zmmvSpw4ipCfWBr-14" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="360" y="320" as="sourcePoint"/>
+                        <mxPoint x="620" y="190" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="_Gnq-zmmvSpw4ipCfWBr-13" value="Project is NOT complete" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" parent="_Gnq-zmmvSpw4ipCfWBr-12" connectable="0" vertex="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="-6" y="1" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="_Gnq-zmmvSpw4ipCfWBr-14" value="Do nothing" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+                    <mxGeometry x="620" y="110" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="_Gnq-zmmvSpw4ipCfWBr-15" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;entryX=1;entryY=0;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="_Gnq-zmmvSpw4ipCfWBr-11" target="_Gnq-zmmvSpw4ipCfWBr-6" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="240" y="290" as="sourcePoint"/>
+                        <mxPoint x="760" y="200" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="_Gnq-zmmvSpw4ipCfWBr-16" value="Project is complete" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" parent="_Gnq-zmmvSpw4ipCfWBr-15" connectable="0" vertex="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="_Gnq-zmmvSpw4ipCfWBr-18" value="Creates new asset with relevant data" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+                    <mxGeometry x="340" y="370" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="_Gnq-zmmvSpw4ipCfWBr-19" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="_Gnq-zmmvSpw4ipCfWBr-6" target="_Gnq-zmmvSpw4ipCfWBr-18" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="240" y="450" as="sourcePoint"/>
+                        <mxPoint x="340" y="450" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="_Gnq-zmmvSpw4ipCfWBr-20" value="Does NOT Exist" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" parent="_Gnq-zmmvSpw4ipCfWBr-19" connectable="0" vertex="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="_Gnq-zmmvSpw4ipCfWBr-24" value="" style="endArrow=classic;html=1;rounded=0;exitX=-0.014;exitY=0.353;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="_Gnq-zmmvSpw4ipCfWBr-10" target="_Gnq-zmmvSpw4ipCfWBr-28" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="380" y="450" as="sourcePoint"/>
+                        <mxPoint x="270" y="300" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="_Gnq-zmmvSpw4ipCfWBr-25" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.856;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;entryPerimeter=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="_Gnq-zmmvSpw4ipCfWBr-18" target="_Gnq-zmmvSpw4ipCfWBr-28" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="380" y="450" as="sourcePoint"/>
+                        <mxPoint x="240" y="380" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="_Gnq-zmmvSpw4ipCfWBr-26" value="Slot Master" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+                    <mxGeometry x="10" y="370" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="_Gnq-zmmvSpw4ipCfWBr-28" value="DGS_SLOT&lt;br&gt;.dbo&lt;br&gt;.slot_master" style="shape=datastore;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+                    <mxGeometry x="170" y="300" width="70" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="Cabinet&lt;br&gt;Analysis" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;spacingTop=10;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+                    <mxGeometry x="10" y="480" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="" style="endArrow=classic;html=1;exitX=0.15;exitY=0.95;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;dashed=1;arcSize=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="_Gnq-zmmvSpw4ipCfWBr-28" target="3">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="380" y="560" as="sourcePoint"/>
+                        <mxPoint x="430" y="510" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="5" value="" style="endArrow=classic;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;strokeWidth=1;arcSize=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="_Gnq-zmmvSpw4ipCfWBr-28" target="_Gnq-zmmvSpw4ipCfWBr-26">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="60" y="360" as="sourcePoint"/>
+                        <mxPoint x="110" y="310" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
 </mxfile>
